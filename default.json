@@ -12,27 +12,27 @@
   "packageRules": [
     {
       "matchCategories": ["docker"],
-      "groupName": "docker"
+      "groupName": "Docker images"
     },
     {
-      "matchCategories": ["cd"],
-      "groupName": "cd"
+      "matchCategories": ["ci", "cd"],
+      "groupName": "CI/CD steps"
     },
     {
       "matchCategories": ["python"],
-      "groupName": "python"
+      "groupName": "Python packages"
     },
     {
       "matchCategories": ["js"],
-      "groupName": "js"
+      "groupName": "Javascript packages"
     },
     {
       "matchManagers": ["git-submodules"],
-      "groupName": "submodules"
+      "groupName": "Git submodules"
     },
     {
       "matchManagers": ["pre-commit"],
-      "groupName": "pre-commit"
+      "groupName": "pre-commit hooks"
     }
   ]
 }
