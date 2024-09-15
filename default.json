@@ -1,0 +1,34 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "schedule": [
+    "every weekend"
+  ],
+  "extends": [
+    "config:recommended"
+  ],
+  "pre-commit": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "matchCategories": ["docker"],
+      "groupName": "docker"
+    },
+    {
+      "matchCategories": ["cd"],
+      "groupName": "cd"
+    },
+    {
+      "matchCategories": ["python"],
+      "groupName": "python"
+    },
+    {
+      "matchManagers": ["git-submodules"],
+      "groupName": "submodules"
+    },
+    {
+      "matchManagers": ["pre-commit"],
+      "groupName": "pre-commit"
+    }
+  ]
+}
