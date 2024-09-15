@@ -4,7 +4,7 @@
     "every weekend"
   ],
   "extends": [
-    "config:recommended"
+    "config:recommended", ":disableDependencyDashboard"
   ],
   "pre-commit": {
     "enabled": true
@@ -21,6 +21,10 @@
     {
       "matchCategories": ["python"],
       "groupName": "python"
+    },
+    {
+      "matchCategories": ["js"],
+      "groupName": "js"
     },
     {
       "matchManagers": ["git-submodules"],
