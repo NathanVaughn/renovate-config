@@ -9,6 +9,7 @@
   "pre-commit": {
     "enabled": true
   },
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "matchCategories": ["docker"],
