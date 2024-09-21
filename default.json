@@ -9,6 +9,9 @@
   "pre-commit": {
     "enabled": true
   },
+  "lockFileMaintenance": {
+    "enabled": true,
+  },
   "labels": ["dependencies"],
   "packageRules": [
     {
