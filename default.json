@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "schedule": [
-    "every weekend"
+    "schedule:weekends"
   ],
   "extends": [
     "config:recommended", ":disableDependencyDashboard"
@@ -11,6 +11,7 @@
   },
   "lockFileMaintenance": {
     "enabled": true,
+    "schedule": ["schedule:monthly"]
   },
   "labels": ["dependencies"],
   "packageRules": [
