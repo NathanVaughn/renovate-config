@@ -10,7 +10,7 @@
     "enabled": true
   },
   "lockFileMaintenance": {
-    "enabled": true,
+    "enabled": false,
     "schedule": ["schedule:monthly"]
   },
   "labels": ["dependencies"],
