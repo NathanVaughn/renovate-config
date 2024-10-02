@@ -1,7 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "schedule": [
-    "schedule:weekends"
+    "every weekend"
+  ],
+  "automergeSchedule": [
+    "every weekend"
   ],
   "extends": [
     "config:recommended", ":disableDependencyDashboard"
@@ -11,7 +14,7 @@
   },
   "lockFileMaintenance": {
     "enabled": false,
-    "schedule": ["schedule:monthly"]
+    "schedule": ["before 4am on the first day of the month"]
   },
   "labels": ["dependencies"],
   "packageRules": [
