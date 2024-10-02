@@ -18,8 +18,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Install vscode-task-runner
-        run: pipx install vscode-task-runner
+      - name: Install pre-commit
+        run: pipx install pre-commit
 
       - name: Cache Pre-Commit
         uses: NathanVaughn/actions-pre-commit-cache@main
