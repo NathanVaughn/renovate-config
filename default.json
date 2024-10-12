@@ -40,7 +40,8 @@
     },
     {
       "matchManagers": ["pre-commit"],
-      "groupName": "pre-commit hooks"
+      "groupName": "pre-commit hooks",
+      "automerge": true
     }
   ]
 }
