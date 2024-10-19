@@ -3,9 +3,6 @@
   "schedule": [
     "every weekend"
   ],
-  "automergeSchedule": [
-    "every weekend"
-  ],
   "extends": [
     "config:recommended", ":disableDependencyDashboard"
   ],
