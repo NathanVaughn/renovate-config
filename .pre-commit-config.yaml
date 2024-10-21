@@ -3,7 +3,7 @@ repos:
     rev: 38.128.6
     hooks:
       - id: renovate-config-validator
-        language_version: lts
+        language_version: lts # https://github.com/nodejs/node/issues/55410
         args:
           - default.json
           - --strict
