@@ -3,3 +3,7 @@ repos:
     rev: 38.128.6
     hooks:
       - id: renovate-config-validator
+        language_version: lts
+        args:
+          - default.json
+          - --strict

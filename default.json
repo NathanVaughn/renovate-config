@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "schedule": [
-    "before 8am on the first Saturday of the month"
+    "before 8am on the first day of the month"
   ],
   "extends": [
     "config:recommended", ":disableDependencyDashboard"
@@ -11,7 +11,7 @@
   },
   "lockFileMaintenance": {
     "enabled": false,
-    "schedule": ["before 8am on the first Saturday of the month"]
+    "schedule": ["before 8am on the first day of the month"]
   },
   "labels": ["dependencies"],
   "packageRules": [

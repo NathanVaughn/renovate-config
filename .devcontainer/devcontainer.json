@@ -22,7 +22,7 @@
 		}
 	},
 	"mounts": [
-		"source=devcontainer-profile-${containerWorkspaceFolderBasename},target=/home/code/,type=volume"
+		"source=devcontainer-profile-${containerWorkspaceFolderBasename},target=/home/dev/,type=volume"
 	],
 	"postStartCommand": "uv tool install pre-commit"
 }
