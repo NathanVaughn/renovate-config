@@ -14,6 +14,14 @@
     "schedule": ["before 8am on the first day of the month"]
   },
   "labels": ["dependencies"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update _VERSION variables in Dockerfiles",
+      "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile\\.[^/]*$"],
+      "matchStrings": ["# renovate: datasource=(?<datasource>[a-z-]+?)(?: depName=(?<depName>.+?))? packageName=(?<packageName>.+?)(?: versioning=(?<versioning>[a-z-]+?))?\\s(?:ENV|ARG) .+?_VERSION=(?<currentValue>.+?)\\s"]
+    }
+  ],
   "packageRules": [
     {
       "matchCategories": ["docker"],
@@ -39,6 +47,12 @@
       "matchManagers": ["pre-commit"],
       "groupName": "pre-commit hooks",
       "automerge": true
+    },
+    {
+      // update uv daily
+      "schedule": ["before 11pm"],
+      // match github releases and docker
+      "matchPackageNames": ["**astral-sh/uv"]
     }
   ]
 }
