@@ -28,8 +28,8 @@
       "groupName": "Docker images"
     },
     {
-      "matchCategories": ["ci", "cd"],
-      "groupName": "CI/CD steps"
+      "matchCategories": ["ci"],
+      "groupName": "CI steps"
     },
     {
       "matchCategories": ["python"],
@@ -38,6 +38,10 @@
     {
       "matchCategories": ["js"],
       "groupName": "Javascript packages"
+    },
+    {
+      "matchCategories": ["kubernetes"],
+      "groupName": "Kubernetes"
     },
     {
       "matchManagers": ["git-submodules"],
