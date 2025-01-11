@@ -41,7 +41,7 @@
     },
     {
       "matchCategories": ["kubernetes"],
-      "groupName": "Kubernetes"
+      "groupName": "Kubernetes deployments"
     },
     {
       "matchManagers": ["git-submodules"],
