@@ -29,7 +29,8 @@
     },
     {
       "matchCategories": ["ci"],
-      "groupName": "CI steps"
+      "groupName": "CI steps",
+      "automerge": true
     },
     {
       "matchCategories": ["python"],
