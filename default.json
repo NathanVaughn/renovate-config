@@ -10,7 +10,7 @@
     "enabled": true
   },
   "lockFileMaintenance": {
-    "enabled": false,
+    "enabled": true,
     "schedule": ["before 8am on the first day of the month"]
   },
   "labels": ["dependencies"],
@@ -34,11 +34,13 @@
     },
     {
       "matchCategories": ["python"],
-      "groupName": "Python packages"
+      "groupName": "Python packages",
+      "automerge": true
     },
     {
       "matchCategories": ["js"],
-      "groupName": "Javascript packages"
+      "groupName": "Javascript packages",
+      "automerge": true
     },
     {
       "matchCategories": ["kubernetes"],
