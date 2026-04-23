@@ -6,6 +6,8 @@
   "extends": [
     "config:recommended", ":disableDependencyDashboard"
   ],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
   "pre-commit": {
     "enabled": true
   },
