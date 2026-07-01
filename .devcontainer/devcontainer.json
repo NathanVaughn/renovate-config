@@ -23,5 +23,5 @@
 	"mounts": [
 		"source=devcontainer-profile-${containerWorkspaceFolderBasename},target=/home/dev/,type=volume"
 	],
-	"postStartCommand": "uv tool install pre-commit"
+	"postStartCommand": "uv tool install prek"
 }
