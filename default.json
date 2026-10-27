@@ -58,8 +58,8 @@
       "automerge": true
     },
     {
-      "schedule": ["before 11pm"],
-      "matchPackageNames": ["**astral-sh/uv"]
+      "matchPackageNames": ["**astral-sh/uv"],
+      "automerge": true
     }
   ]
 }
